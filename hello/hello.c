@@ -5,4 +5,5 @@ int main()
 	for(int j = 0; j < 5; j++)
 		printf("%d\n", i[j]);
 	printf("add some thing in github");
+	printf("this is a useful tool");
 }
