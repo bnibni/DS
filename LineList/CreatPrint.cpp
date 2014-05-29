@@ -68,7 +68,29 @@ void add_list(node *head, int position, int value)
 	add->next = p;
 }
 
-
+void reverse(node* head)
+{
+	node *pre, *cur, *next, *p;
+	head = head->next;
+	pre = head;
+	cur = head->next;
+	while(cur)
+	{
+		next = cur->next;
+		cur->next = pre;
+		pre = cur;
+		cur = next;
+	}
+	head->next = NULL;
+	head = pre;
+	p = head;
+	cout << "the reverse linelist is" << endl;
+	while(p)
+	{
+		cout << p->info << endl;
+		p = p->next;
+	}
+}
 
 
 
@@ -80,6 +102,5 @@ int main()
 	node *head;
 	head = creat();
 	print(head);
-	add_list(head, 3, 1);
-	print(head);
+	reverse(head);
 }
