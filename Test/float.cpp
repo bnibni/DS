@@ -1,4 +1,4 @@
-//将unsigned的输出为二进制数
+//将unsigned的输出为二进制数.
 //首先经unsigned int 转换为二进制，然后通过结构体将浮点数用之前整形的方式打印
 #include <iostream>
 using namespace std;
